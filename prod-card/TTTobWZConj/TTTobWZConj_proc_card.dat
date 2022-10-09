@@ -1,0 +1,11 @@
+set group_subprocesses Auto 
+set ignore_six_quark_processes False 
+set loop_optimized_output True 
+set complex_mass_scheme False 
+import model loop_sm
+define lep = e+ e- mu+ mu-
+define nus = ve~ vm~ ve vm
+generate p p > t t~, t > b w+, t~ > b~ w- z
+
+output TTTobWZConj -nojpeg
+
